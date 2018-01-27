@@ -24,7 +24,7 @@ export default class Header extends React.Component {
           <div className="col-md-3 col-0"></div>
           <div className="col-md-1 col-4 navbar-brand">
             <img className="navbar-brand" height={35} style={{marginBottom: "5%"}} src={logo}  alt="Product logo" />
-            <Link className="navbar-brand" style={{marginLeft: "2%"}} to="/">Product</Link>
+            <Link className="navbar-brand" style={{marginLeft: "2%"}} to="/">{config.siteName}</Link>
           </div>
           <button className="navbar-toggler" onClick={() => {this.setState({collapse: this.state.collapse ? false : true})}} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style={{marginRight: "3%"}}>
             <span className="navbar-toggler-icon"></span>
